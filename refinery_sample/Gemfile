@@ -55,3 +55,5 @@ gem 'refinerycms-wymeditor', ['~> 1.0', '>= 1.0.0']
 gem 'seo_meta', github: 'parndt/seo_meta', branch: 'master'
 
 gem 'paper_trail', github: 'airblade/paper_trail', branch: 'master'
+
+gem 'refinerycms-events', path: 'vendor/extensions'

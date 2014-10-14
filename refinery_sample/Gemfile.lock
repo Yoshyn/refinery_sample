@@ -74,6 +74,13 @@ GIT
       dragonfly-s3_data_store (~> 1.0.0)
       refinerycms-core (= 3.0.0)
 
+PATH
+  remote: vendor/extensions
+  specs:
+    refinerycms-events (1.0)
+      acts_as_indexed (~> 0.8.0)
+      refinerycms-core (~> 3.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -286,6 +293,7 @@ DEPENDENCIES
   rails (= 4.1.6)
   refinerycms!
   refinerycms-acts-as-indexed (~> 2.0, >= 2.0.0)
+  refinerycms-events!
   refinerycms-i18n!
   refinerycms-wymeditor (~> 1.0, >= 1.0.0)
   sass-rails (~> 4.0.3)
