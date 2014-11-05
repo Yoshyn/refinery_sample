@@ -1,4 +1,21 @@
-<!-- <h1 id='logo'>
-  <%= link_to Refinery::Core.site_name, refinery.root_path %>
-</h1> -->
-<%= Refinery::Pages::BootstrapMenuPresenter.new(refinery_menu_pages, self).to_html %>
+<div class='masthead'>
+  <div class='container-fluid'>
+    <div class='row'>
+
+      <div id='frontage-left' class='hidden-xs hidden-sm hidden-md col-lg-3 pull-down'>
+        <p class='text-right'>Notre Titre</p>
+      </div>
+
+      <div id='frontage-middle' class='col-xs-12 col-lg-6'>
+        <h1 id='logo' class='text-center text-uppercase'><%= Refinery::Core.site_name %></h1>
+      </div>
+
+      <div id='frontage-right' class='hidden-xs hidden-sm hidden-md col-lg-3 pull-down'>
+        <p class='text-left'>Nos noms</p>
+      </div>
+    </div>
+    <div id='frontage-dots' class='row'></div>
+  </div>
+
+  <%= Refinery::Pages::BootstrapJustifiedMenuPresenter.new(refinery_menu_pages, self).to_html %>
+</div>
